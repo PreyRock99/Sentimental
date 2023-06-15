@@ -44,7 +44,7 @@ st.header("Emotional synthesis ")
 import requests
 
 API_URL = "https://api-inference.huggingface.co/models/j-hartmann/emotion-english-distilroberta-base"
-headers = {"Authorization": "Bearer " + st.secrets("Huggingface")}
+headers = {"Authorization": "Bearer " + st.secrets["Huggingface"]}
 sentence = st.text_input('Enter your text')
 click=st.button("calculate")
 
